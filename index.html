@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+</head>
+<body>
+    <h1 class="text-center">
+        Form Validasi J-Query
+    </h1>
+
+    <div class="container my-3">
+        <div class="col-lg-8 m-auto d-block">
+            <div class="form">
+                <form id="formValid">
+                    <div class="form-group">
+                        <label class="Nama">Nama</label>
+                        <input class="form-control" type="text" name="nama" id="nama" maxlength="50" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label class="NRP">NRP</label>
+                        <input class="form-control" type="text" name="nrp" id="nrp" maxlength="14" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label class="Alamat">Alamat</label>
+                        <input class="form-control" type="text" name="Alamat" id="Alamat" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label class="Tanggal Lahir">Tanggal Lahir</label>
+                        <input class="form-control" type="date" name="tanggal" id="tanggal" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label class="Umur">Umur</label>
+                        <input class="form-control" type="number" name="umur" id="umur" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label class="Email">Email</label>
+                        <input class="form-control" type="email" name="email" id="email" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label class="password">Password</label>
+                        <input class="form-control" type="password" name="password1" id="password1" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label class="password">Konfirmasi Password</label>
+                        <input class="form-control" type="password" name="password2" id="password2" required>
+                    </div>
+            
+                    <div class="p-t-15">
+                        <button class="btn btn-primary submit-button" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script validasi -->
+    <script src="js/validation.js"></script>
+</body>
+</html>

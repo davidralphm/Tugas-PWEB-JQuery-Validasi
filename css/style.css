@@ -1,0 +1,12 @@
+.error {
+    font-size: small;
+    color: red;
+}
+
+body {
+    background-color: hsl(180, 25%, 85%)  ;
+}
+
+.submit-button {
+    width: 100%;
+}
